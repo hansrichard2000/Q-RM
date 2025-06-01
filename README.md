@@ -20,7 +20,7 @@ chenhzh59@mail2.sysu.edu.cn, luckytyang@tencent.com, quanxj3@mail.sysu.edu.cn
 
 
 <div align="center">
-    <a href="https://arxiv.org/pdf/2403.13679.pdf"><img src="assets/Paper-Arxiv-orange.svg" ></a>
+    <a href="https://arxiv.org/pdf/2505.23363"><img src="assets/Paper-Arxiv-orange.svg" ></a>
 </div>
 
 
