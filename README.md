@@ -3,7 +3,10 @@ _**Prompt: bag has a 5\% discount. If it is marked \$140, how much will you pay 
 ![image](assets/introduction-2.png)
 Token credit assignment visualization of an example from GSM8K. We compare our method Q-RM with DPO-RM on trajectories $\tau^l$ and $\tau^w$.
 
-# Discriminative Policy Optimization for Token-Level Reward Model 
+
+<h1 style="text-align: center;">Discriminative Policy Optimization for Token-Level Reward Model</h1>
+
+---
 
 <div align="center">
 Hongzhan Chen<sup>1</sup>, Tao Yang<sup>2*</sup>, Shiping Gao<sup>1</sup>, Ruijun Chen<sup>1</sup>, Xiaojun Quan<sup>1*</sup>, Hongtao Tian<sup>2</sup>, Ting Yao<sup>2</sup>
@@ -54,6 +57,9 @@ conda activate qrm
 
 pip install -r requirements.txt
 ```
+
+## Data
+- TODO: Will be released soon.
 
 ## Reward Model Training
 Before the training process starts, you should follow the instructions in the training scripts in `scripts` directory to prepare your data and model checkpoints.
