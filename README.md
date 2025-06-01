@@ -1,12 +1,19 @@
+<div align="center">
+
 _**Prompt: bag has a 5\% discount. If it is marked \$140, how much will you pay after the discount?**_
+</div>
+
 ![image](assets/introduction-1.png)
 ![image](assets/introduction-2.png)
 Token credit assignment visualization of an example from GSM8K. We compare our method Q-RM with DPO-RM on trajectories $\tau^l$ and $\tau^w$.
 
 
-<center>
-# Discriminative Policy Optimization for Token-Level Reward Model
-</center>
+<div id="top" align="center">
+
+Discriminative Policy Optimization for Token-Level Reward Model
+-----------------------------
+
+</div>
 
 <div align="center">
 Hongzhan Chen<sup>1</sup>, Tao Yang<sup>2*</sup>, Shiping Gao<sup>1</sup>, Ruijun Chen<sup>1</sup>, Xiaojun Quan<sup>1*</sup>, Hongtao Tian<sup>2</sup>, Ting Yao<sup>2</sup>
