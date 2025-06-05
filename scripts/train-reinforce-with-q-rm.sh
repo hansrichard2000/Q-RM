@@ -6,8 +6,8 @@ export MAX_FORWARD_BATCH_SIZE=36
 export POLICY_MAX_BATCH_SIZE=8
 export NUM_SAMPLES=1
 
-export DATA_FILE="path/to/instruction/file/results.jsonl"  # data format [{"instruction": "xxx"},]
-export LABEL_FILE="path/to/test/file/results.jsonl"  # data format [{"instruction": "xxx", "label": "xxx"},]
+export DATA_FILE="data/${TASK}/train/ppo/results.jsonl"  # data format [{"instruction": "xxx"},]
+export LABEL_FILE="data/${TASK}/test/test.jsonl"  # data format [{"instruction": "xxx", "label": "xxx"},]
 export MODEL_TYPE="llama3"
 export STRATEGY="${TASK}-qrm-samples-${NUM_SAMPLES}-lr-1e-6-chunk-size-3072"
 

@@ -66,7 +66,18 @@ pip install -r requirements.txt
 ```
 
 ## Data
-- TODO: Will be released soon.
+Unzip the training data:
+```shell
+unzip data/gsm8k/train/dpo/results.zip -d data/gsm8k/train/dpo/
+unzip data/gsm8k/train/pairwise/results.zip -d data/gsm8k/train/pairwise/
+unzip data/gsm8k/train/ppo/results.zip -d data/gsm8k/train/ppo/
+unzip data/gsm8k/train/sft/results.zip -d data/gsm8k/train/sft/
+
+unzip data/math/train/dpo/results.zip -d data/math/train/dpo/
+unzip data/math/train/pairwise/results.zip -d data/math/train/pairwise/
+unzip data/math/train/ppo/results.zip -d data/math/train/ppo/
+unzip data/math/train/sft/results.zip -d data/math/train/sft/
+```
 
 ## Reward Model Training
 Before the training process starts, you should follow the instructions in the training scripts in `scripts` directory to prepare your data and model checkpoints.

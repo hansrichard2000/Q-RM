@@ -1,6 +1,6 @@
 cd ..
 export TASK="gsm8k"
-export DATA_FILE="path/to/pairwise/file/results.jsonl"  # data format: [{"instruction": "xxx", "chosen": "xxx", "rejected": "xxx"},]
+export DATA_FILE="data/${TASK}/train/pairwise/results.jsonl"  # data format: [{"instruction": "xxx", "chosen": "xxx", "rejected": "xxx"},]
 export STRATEGY="${TASK}-beta-0.1-lr-1e-6"
 
 export MAX_SEQ_LEN=1024

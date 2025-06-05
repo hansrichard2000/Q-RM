@@ -1,9 +1,9 @@
 cd ..
 export TASK="gsm8k"
-export DATA_FILE="path/to/instruction/file/results.jsonl"  # data format [{"instruction": "xxx"},]
+export DATA_FILE="data/${TASK}/train/ppo/results.jsonl"  # data format [{"instruction": "xxx"},]
 export MODEL_TYPE="llama3"
 export STRATEGY="${TASK}-dpo-rm-samples-1-lr-1e-6-chunk-size-3072"
-export LABEL_FILE="path/to/test/file/results.jsonl"  # data format [{"instruction": "xxx", "label": "xxx"},]
+export LABEL_FILE="data/${TASK}/test/test.jsonl"  # data format [{"instruction": "xxx", "label": "xxx"},]
 
 export POLICY_MODEL_NAME="llama-3.2-3b-instruct"
 export POLICY_LORA_RANK=-1

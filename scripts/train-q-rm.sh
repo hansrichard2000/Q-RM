@@ -1,6 +1,6 @@
 cd ..
 export TASK="gsm8k"
-export DATA_FILE="path/to/pairwise/file/results.jsonl"  # data format: [{"instruction": "xxx", "chosen": "xxx", "rejected": "xxx"},]
+export DATA_FILE="data/${TASK}/train/pairwise/results.jsonl"  # data format: [{"instruction": "xxx", "chosen": "xxx", "rejected": "xxx"},]
 export MODEL_TYPE="llama3"
 export MODEL_NAME="llama-3-70b-instruct"
 export LORA_RANK=128
