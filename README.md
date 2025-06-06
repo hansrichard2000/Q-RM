@@ -3,8 +3,7 @@
 _**Prompt: bag has a 5\% discount. If it is marked \$140, how much will you pay after the discount?**_
 </div>
 
-![image](assets/introduction-1.png)
-![image](assets/introduction-2.png)
+![image](assets/introduction.png)
 Token credit assignment visualization of an example from GSM8K. We compare our method Q-RM with DPO-RM on trajectories $\tau^l$ and $\tau^w$.
 
 
