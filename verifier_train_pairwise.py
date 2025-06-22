@@ -39,8 +39,8 @@ def main(
         gamma: float = 2.0,
         log_dir: str = None
 ):
-    tokenizer_file = ckpt_dir if tokenizer_file is None else tokenizer_file
-    config_file = ckpt_dir if config_file is None else config_file
+    tokenizer_file = tokenizer_file or ckpt_dir
+    config_file = config_file or ckpt_dir
     setup_model_parallel(seed=seed, log_dir=log_dir)
     print_current_func_args()
     model, tokenizer = get_parallel_verifier(

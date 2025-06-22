@@ -87,6 +87,16 @@ cd scripts
 sh train-q-rm.sh
 ```
 
+## Reward Model Evaluation
+If you want to evaluate your reward model, run the following command:
+
+```shell
+cd scripts
+
+sh evaluate-q-rm.sh
+```
+
+This will produce two PDF files (`chosen_1.pdf` and `rejected_1.pdf`) that visualize the token-level reward assignment for the chosen and rejected trajectories, respectively.
 ## REINFORCE Training
 ```shell
 cd scripts
