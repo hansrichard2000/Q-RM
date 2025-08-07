@@ -3,3 +3,6 @@
 ./log
 ./results
 ./test
+src/weights
+results.jsonl
+log

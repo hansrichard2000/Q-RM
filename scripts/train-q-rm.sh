@@ -1,17 +1,14 @@
-cd ..
 export TASK="gsm8k"
 export DATA_FILE="data/${TASK}/train/pairwise/results.jsonl"  # data format: [{"instruction": "xxx", "chosen": "xxx", "rejected": "xxx"},]
-export MODEL_TYPE="llama3"
-export MODEL_NAME="llama-3-70b-instruct"
+export MODEL_TYPE="llama3.1"
+export MODEL_NAME="llama-3.1-8b-instruct"
 export LORA_RANK=128
 export LR=1e-5
 export STRATEGY="mean-score-beta-0.2-gamma-2.0-lr-${LR}"
-
-export MODEL_DIR="path/to/model/${MODEL_TYPE}/${MODEL_NAME}"  # need to download checkpoint from https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct/tree/main/original
+export MODEL_DIR="/root/ReinforcementLearning/Q-RM/src/weights/Llama-3.1-8B-Instruct/original/"  # need to download checkpoint from https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct/tree/main/original
 export SAVE_DIR="results/${MODEL_NAME}/verifier/${TASK}-pairwise-${STRATEGY}/lora-${LORA_RANK}/"
 export LOG_DIR="log/${MODEL_NAME}/verifier/${TASK}-pairwise-${STRATEGY}/lora-${LORA_RANK}/"
-
-torchrun --nproc_per_node 8 verifier_train_pairwise.py \
+torchrun --nproc_per_node 1 verifier_train_pairwise.py \
     --strategy ${STRATEGY} \
     --ckpt_dir ${MODEL_DIR} \
     --save_dir ${SAVE_DIR} \
